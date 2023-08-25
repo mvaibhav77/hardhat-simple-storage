@@ -1,0 +1,25 @@
+{
+  "name": "hardhat-simple-storage",
+  "version": "1.0.0",
+  "description": "A hardhat version of simple-storage",
+  "main": "deploy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hardhat",
+    "blockchain",
+    "ethereum",
+    "ethersjs"
+  ],
+  "author": "Vaibhav Shukla",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "hardhat": "^2.17.1"
+  },
+  "dependencies": {
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "dotenv": "^16.3.1"
+  }
+}
