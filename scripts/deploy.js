@@ -10,7 +10,7 @@ const main = async () => {
   if (network.config.chainId === 11155111 && process.env.ETHERSCAN_API_KEY) {
     console.log("Waiting for 6 block confirmation");
     await simpleStorage.deploymentTransaction().wait(6);
-    console.log("^ block confirmed");
+    console.log("^6^ block confirmed");
     await verify(simpleStorage.target, []);
   }
 
