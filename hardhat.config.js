@@ -2,6 +2,7 @@ require("@nomicfoundation/hardhat-toolbox");
 require("dotenv").config();
 require("./tasks/block-numbers");
 require("hardhat-gas-reporter");
+// require('solidity-coverage')
 
 const SEPOLIA_RPC_URL = process.env.SEPOLIA_RPC_URL || "http://0.0.0.0:6737";
 const PRIVATE_KEY = process.env.PRIVATE_KEY || "0xkey";

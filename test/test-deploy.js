@@ -25,4 +25,12 @@ describe("SimpleStorage", function () {
     const currentValue = await simpleStorage.retrieve();
     assert.equal(currentValue.toString(), expectedValue);
   });
+
+  it("Should show person when we call", async function () {
+    const expectedPersonLength = "1";
+    const transactionResponse = await simpleStorage.addPerson("Vaibhav", 77);
+    await transactionResponse.wait(1);
+    const currentPersonLength = await simpleStorage.getPeopleLength();
+    assert.equal(currentPersonLength.toString(), expectedPersonLength);
+  });
 });
